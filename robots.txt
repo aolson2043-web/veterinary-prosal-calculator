@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://aolson2043-web.github.io/veterinary-prosal-calculator/sitemap.xml
+Sitemap: https://www.salarynspect.com/sitemap.xml
