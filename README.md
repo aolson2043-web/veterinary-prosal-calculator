@@ -35,3 +35,19 @@ This version has already been updated so:
 - `CNAME` contains `www.salarynspect.com`
 
 Upload all files in this package to the root of the existing GitHub repository, replacing files with the same names.
+
+
+## v6 — Other Careers SEO page
+
+This update preserves every existing URL and adds:
+- `/compensation-based-careers.html`
+- visible Other Careers navigation links
+- a prominent homepage callout for non-veterinary users
+- a new sitemap entry
+- Google Analytics App Store click tracking on the new page
+- a small homepage App Store click-tracking fix
+
+After publishing, request indexing only for:
+`https://www.salarynspect.com/compensation-based-careers.html`
+
+The existing pages do not need to be manually re-indexed.
