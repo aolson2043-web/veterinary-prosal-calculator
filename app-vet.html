@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open SalaryNspect</title>
+<meta name="robots" content="noindex,nofollow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GW2DQVL5QP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GW2DQVL5QP');
+
+let redirected = false;
+function openStore() {
+  if (redirected) return;
+  redirected = true;
+  window.location.replace("https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f");
+}
+
+gtag('event', 'app_store_click', {
+  destination: 'salarynspect',
+  audience: 'veterinary',
+  placement: 'qr',
+  transport_type: 'beacon',
+  event_callback: openStore
+});
+setTimeout(openStore, 700);
+</script>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#f5f9fc;color:#0b1f33;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-align:center}
+main{max-width:440px;background:#fff;border:1px solid #e8eef3;border-radius:20px;padding:28px;box-shadow:0 18px 55px rgba(7,23,40,.10)}
+h1{margin:0 0 8px;font-size:1.35rem}p{margin:0;color:#5b6b7c;line-height:1.5}
+a{display:inline-block;margin-top:18px;color:#0f9e9a;font-weight:800}
+</style>
+</head>
+<body>
+<main>
+<h1>Opening SalaryNspect…</h1>
+<p>You should be redirected to the App Store automatically.</p>
+<a href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f">Open the App Store</a>
+</main>
+</body>
+</html>

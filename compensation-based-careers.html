@@ -8,6 +8,7 @@
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://www.salarynspect.com/compensation-based-careers.html">
 <meta name="theme-color" content="#0b1f33">
+<meta name="apple-itunes-app" content="app-id=6804337327">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GW2DQVL5QP"></script>
 <script>
@@ -53,9 +54,10 @@ gtag('config', 'G-GW2DQVL5QP');
   --radius-md:12px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scrollbar-gutter:stable}
 body{
   margin:0;
+  overflow-y:scroll;
   color:var(--slate-900);
   background:linear-gradient(180deg,#fbfdff 0%,#f5f9fc 100%);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -116,18 +118,23 @@ header{
 }
 .nav-links{
   min-width:0;
-  display:flex;
+  display:grid;
+  grid-template-columns:74px 92px 72px 118px 100px 94px;
   align-items:center;
-  justify-content:flex-end;
-  gap:14px;
-  flex-wrap:nowrap
+  justify-content:end;
+  column-gap:10px
 }
 .nav-links a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
   white-space:nowrap;
   text-decoration:none;
+  text-align:center;
   color:var(--navy-800);
   font-weight:700;
-  font-size:.84rem
+  font-size:.82rem
 }
 .nav-links a:hover,.nav-links a[aria-current="page"]{color:var(--teal-600)}
 .header-cta{
@@ -151,8 +158,11 @@ header{
 @media(max-width:1080px){
   .nav{gap:14px}
   .nav-right{gap:12px}
-  .nav-links{gap:10px}
-  .nav-links a{font-size:.79rem}
+  .nav-links{
+    grid-template-columns:70px 86px 66px 108px 92px 88px;
+    column-gap:7px
+  }
+  .nav-links a{font-size:.76rem}
   .header-cta{flex-basis:176px;width:176px;font-size:.80rem}
 }
 @media(max-width:940px){
@@ -225,6 +235,31 @@ footer{border-top:1px solid var(--slate-200);padding:26px 0 36px;color:var(--sla
 .role-tag{display:inline-flex;margin-bottom:9px;padding:5px 9px;border-radius:999px;background:var(--teal-100);color:#075e5a;font-size:.74rem;font-weight:800}
 .role-note{font-size:.88rem;color:var(--slate-600);margin-top:10px}
 @media(max-width:700px){.career-grid{grid-template-columns:1fr}}
+
+/* Desktop app handoff */
+.desktop-app-promo{padding:0 0 54px}
+.desktop-app-box{
+  display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;
+  padding:24px 28px;border:1px solid var(--slate-200);border-radius:var(--radius-xl);
+  background:#fff;box-shadow:0 12px 32px rgba(7,23,40,.06)
+}
+.desktop-app-copy h2{margin:0 0 7px;color:var(--navy-950);font-size:1.4rem;letter-spacing:-.03em}
+.desktop-app-copy p{margin:0;color:var(--slate-600);max-width:720px}
+.desktop-app-actions{display:flex;align-items:center;gap:16px}
+.desktop-app-qr{
+  width:112px;height:112px;padding:7px;background:#fff;border:1px solid var(--slate-200);
+  border-radius:14px;box-shadow:0 8px 20px rgba(7,23,40,.06)
+}
+.desktop-app-action-copy{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.desktop-app-action-copy strong{color:var(--navy-900);font-size:.9rem}
+.desktop-app-action-copy span{color:var(--slate-600);font-size:.78rem;max-width:210px}
+.desktop-app-button{
+  text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+  padding:9px 13px;border-radius:11px;background:linear-gradient(135deg,var(--teal-500),var(--teal-600));
+  color:#fff;font-weight:800;font-size:.82rem;white-space:nowrap
+}
+@media(max-width:940px){.desktop-app-promo{display:none}}
+
 </style>
 </head>
 <body>
@@ -326,6 +361,26 @@ footer{border-top:1px solid var(--slate-200);padding:26px 0 36px;color:var(--sla
 </div>
 </main>
 
+
+<section class="desktop-app-promo" aria-label="Get SalaryNspect">
+  <div class="wrap">
+    <div class="desktop-app-box">
+      <div class="desktop-app-copy">
+        <h2>Take SalaryNspect with you</h2>
+        <p>Track production, commission, bonuses, and other variable compensation from your iPhone. SalaryNspect includes three free reports to try the workflow.</p>
+      </div>
+      <div class="desktop-app-actions">
+        <img class="desktop-app-qr" src="salarynspect-qr.png" alt="QR code to open SalaryNspect on the App Store">
+        <div class="desktop-app-action-copy">
+          <strong>Scan with your iPhone</strong>
+          <span>Scan the QR code with your phone camera, or open the App Store directly.</span>
+          <a class="desktop-app-button" data-app-placement="desktop_qr_card" href="https://apps.apple.com/us/app/salarynspect/id6804337327" target="_blank" rel="noopener noreferrer">View on the App Store</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap footer-grid">
     <div><strong>SalaryNspect</strong> • Compensation &amp; Pay Tracker</div>
@@ -338,17 +393,28 @@ footer{border-top:1px solid var(--slate-200);padding:26px 0 36px;color:var(--sla
   </div>
 </footer>
 
+
 <script>
 document.querySelectorAll('a[href*="apps.apple.com/us/app/salarynspect"]').forEach(link => {
+  if (link.dataset.salarynspectTracked === "yes") return;
+  link.dataset.salarynspectTracked = "yes";
   link.addEventListener("click", () => {
     if (typeof gtag === "function") {
+      let placement = link.dataset.appPlacement || "unknown";
+      if (placement === "unknown") {
+        if (link.classList.contains("header-cta")) placement = "header";
+        else if (link.classList.contains("mini-btn")) placement = "page_cta";
+        else if (link.closest("footer")) placement = "footer";
+      }
       gtag("event", "app_store_click", {
         destination: "salarynspect",
-        audience: "other_careers"
+        audience: "other_careers",
+        placement: placement
       });
     }
   });
 });
 </script>
+
 </body>
 </html>
