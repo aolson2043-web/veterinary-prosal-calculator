@@ -1,18 +1,24 @@
-# SalaryNspect Website
+# SalaryNspect v6.4 — Google/Search Favicon Patch
 
+This patch adds the SalaryNspect SN favicon without changing any URLs, page titles, canonical URLs, or visible page content.
 
-## v6.3 — Conversion upgrade
+Upload every file in this ZIP to the ROOT of the existing GitHub repository.
+Replace the six HTML files with these versions and add the favicon/manifest files.
 
-This release keeps all existing indexable URLs unchanged and adds:
-- Apple Smart App Banner meta tag on every main page
-- desktop-only QR handoff card on every main page
-- veterinary QR routes to the veterinary App Store custom product page
-- Other Careers QR routes to the main SalaryNspect App Store page
-- post-calculation SalaryNspect CTA that appears only after the user presses Calculate
-- standardized `app_store_click` analytics with `placement` values
-- QR scans attributed as `app_store_click` with `placement=qr`
-- a fix for the duplicated "SalaryNspect works beyond veterinary compensation" heading
+Included:
+- favicon.ico
+- favicon-48.png
+- favicon-96.png
+- favicon-180.png
+- favicon-192.png
+- favicon-512.png
+- apple-touch-icon.png
+- site.webmanifest
+- the six public HTML pages with favicon tags
 
-New helper pages `app-vet.html` and `app.html` are marked `noindex,nofollow` and should NOT be added to the sitemap.
+After GitHub Pages deploys:
+1. Open https://www.salarynspect.com/favicon-48.png to confirm it loads.
+2. In Google Search Console, inspect https://www.salarynspect.com/
+3. Test Live URL, then Request Indexing for the HOMEPAGE only.
 
-No existing page URL was moved or renamed. Manual re-indexing is not required for this conversion update.
+Google decides when to refresh the favicon in Search results, so the visual update can lag the site deployment.
