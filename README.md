@@ -1,24 +1,10 @@
-# SalaryNspect v6.4 — Google/Search Favicon Patch
+# SalaryNspect Website v7.0 — review build
 
-This patch adds the SalaryNspect SN favicon without changing any URLs, page titles, canonical URLs, or visible page content.
+This update starts from the available v5 website ZIP, NOT the latest GitHub main branch. The current public GitHub repository has additional changes (career page, QR promotions, etc.) that may not be present here. Do not overwrite main without merging those newer changes.
 
-Upload every file in this ZIP to the ROOT of the existing GitHub repository.
-Replace the six HTML files with these versions and add the favicon/manifest files.
+Included: six genuine supplied promotional screenshots optimized to WebP, responsive app showcase, pricing copy, example-input labeling, result-aware call-to-action, additional standalone profession calculators, About and website privacy pages, homepage link fixes, sitemap, schema.
 
-Included:
-- favicon.ico
-- favicon-48.png
-- favicon-96.png
-- favicon-180.png
-- favicon-192.png
-- favicon-512.png
-- apple-touch-icon.png
-- site.webmanifest
-- the six public HTML pages with favicon tags
+Before publishing: compare with current live GitHub version, preserve QR cards and other later fixes, verify privacy/contact email and App Store lifetime pricing, ensure all legal/privacy text matches real app behavior, test calculators on mobile, run PageSpeed and validate structured data. Tracking uses existing GA measurement ID. No Apple pt/ct tokens were guessed. All profession calculators are simplified estimates and explicitly caveated.
 
-After GitHub Pages deploys:
-1. Open https://www.salarynspect.com/favicon-48.png to confirm it loads.
-2. In Google Search Console, inspect https://www.salarynspect.com/
-3. Test Live URL, then Request Indexing for the HOMEPAGE only.
 
-Google decides when to refresh the favicon in Search results, so the visual update can lag the site deployment.
+Support page update: Upload support.html with the rest of the website. Update App Store Connect Support URL to https://www.salarynspect.com/support.html and Privacy Policy URL to https://www.salarynspect.com/privacy.html. Contact email: aodigital.lab@gmail.com.
