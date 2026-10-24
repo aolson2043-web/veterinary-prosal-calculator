@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Production Pay Calculator & Commission Tracking | SalaryNspect</title>
+<title>Production Pay Calculator & Commission Tracking | SalaryNspect</title><link rel="icon" type="image/png" href="assets/salarynspect-app-icon.png">
 <meta name="description" content="Free production pay calculator plus an iPhone app to check expected vs. reported pay, understand negative accrual, track commissions, and compare offers.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://www.salarynspect.com/">
@@ -146,35 +146,92 @@ footer{border-top:1px solid rgba(111,255,238,.18);padding:32px 0 40px;color:rgba
 /* v8.2: full-width editorial hero, standalone artwork, readable controls */
 .header-cta{white-space:nowrap;flex-shrink:0;min-width:max-content;padding:11px 18px;font-size:.84rem;line-height:1.15}
 .nav-right{min-width:0}.nav-links{flex-wrap:nowrap;gap:11px}.nav-links a{white-space:nowrap}
-.hero{padding-top:42px}.hero-surface.hero-surface--editorial{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:clamp(28px,5vw,64px) clamp(20px,5.5vw,72px) 0;background:radial-gradient(circle at 88% 12%,rgba(24,190,184,.18),transparent 42%),linear-gradient(135deg,#071728 0%,#0b2941 62%,#0c4561 100%);overflow:hidden;border:1px solid rgba(255,255,255,.1)}
-.hero-surface--editorial .hero-copy{padding:0;text-align:left;max-width:970px}
-.hero-title{margin:0;max-width:none;font-weight:950;color:#52e0d5;font-size:clamp(2.65rem,7.1vw,6.8rem);letter-spacing:-.055em;line-height:.98;text-shadow:0 8px 35px rgba(11,222,206,.12);font-variant-caps:small-caps;text-wrap:balance}
-.hero-title .hero-small{font-size:1em;letter-spacing:inherit;font-variant:inherit}.hero-period{display:none}
-.hero-surface--editorial .eyebrow{font-size:.77rem;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
-.hero-surface--editorial .hero-lead{font-size:clamp(1.13rem,2vw,1.55rem);max-width:820px;margin:25px 0 0;line-height:1.52;color:#fff;font-weight:600}
-.hero-surface--editorial .hero-audience{max-width:780px;margin:11px 0 0;font-size:clamp(.92rem,1.3vw,1.06rem);line-height:1.55;color:#bdd9e4}
-.hero-actions{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin-top:27px}
-.hero-app-cta,.hero-secondary-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 21px;min-height:52px;border-radius:12px;font-weight:850;font-size:.96rem;text-decoration:none;line-height:1.3;white-space:nowrap;box-sizing:border-box}
-.hero-app-cta{background:#35d5cb;color:#06272d;box-shadow:0 12px 25px rgba(7,16,26,.23)}.hero-app-cta:hover{background:#6af2e9}
-.hero-secondary-cta{border:1px solid rgba(192,241,239,.4);color:#eefcfd;background:rgba(255,255,255,.065)}
-.hero-facts{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0}.hero-facts span{display:inline-flex;gap:5px;align-items:center;border:1px solid rgba(152,232,227,.22);background:rgba(255,255,255,.065);border-radius:12px;padding:11px 13px;color:#e0f2f4;font-size:.88rem;line-height:1.3}.hero-facts strong{color:#70f2e7}
-.hero-wide-art{margin:32px -28px 0;max-height:370px;overflow:hidden;position:relative;border-top:1px solid rgba(255,255,255,.12);background:rgba(3,18,29,.2)}
-.hero-wide-art img{display:block;width:100%;height:100%;max-height:370px;object-fit:cover;object-position:center center;border:0;border-radius:0;box-shadow:none}
-@media(min-width:1200px){.hero-wide-art{margin-left:-72px;margin-right:-72px}.hero-wide-art img{max-height:350px}}
-@media(max-width:900px){.nav-links{display:none}.hero-surface--editorial .hero-copy{text-align:left}.hero-title{font-size:clamp(2.5rem,9vw,5.4rem)}.hero-wide-art{margin-left:-25px;margin-right:-25px}}
-@media(max-width:560px){.hero{padding:22px 0 14px}.hero-surface.hero-surface--editorial{padding:27px 19px 0;border-radius:22px}.hero-title{font-size:clamp(2.45rem,10.8vw,4rem);line-height:1.03}.hero-surface--editorial .hero-lead{font-size:1.12rem}.hero-actions{flex-direction:column;align-items:stretch}.hero-app-cta,.hero-secondary-cta{width:100%;white-space:normal;text-align:center;font-size:.91rem;padding:13px 14px}.hero-facts{display:grid;grid-template-columns:1fr;gap:8px}.hero-facts span{justify-content:center;text-align:center}.hero-wide-art{margin:25px -19px 0;max-height:235px}.hero-wide-art img{height:235px;object-fit:cover}.header-cta{font-size:.75rem;padding:10px 12px;white-space:nowrap;min-width:0}.nav{gap:8px}.brand{font-size:1rem}.mark{width:32px;height:32px}}
+.hero{padding:42px 0 28px;position:relative}
+.hero-surface.hero-surface--premium{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(380px,.98fr);gap:clamp(24px,4vw,48px);align-items:center;padding:clamp(28px,4vw,42px);border-radius:34px;background:radial-gradient(circle at 14% 12%,rgba(111,255,238,.10),transparent 21rem),radial-gradient(circle at 86% 18%,rgba(24,190,184,.16),transparent 18rem),linear-gradient(140deg,#061524 0%,#0b2941 57%,#0b4058 100%);overflow:hidden;border:1px solid rgba(255,255,255,.10);box-shadow:0 28px 70px rgba(5,18,33,.22)}
+.hero-surface.hero-surface--premium::before{content:'';position:absolute;inset:auto auto -110px -60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(44,205,196,.16),transparent 65%);filter:blur(4px)}
+.hero-surface.hero-surface--premium::after{content:'';position:absolute;inset:-80px -50px auto auto;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.09),transparent 60%)}
+.hero-surface--premium .hero-copy{position:relative;z-index:2;padding:0;text-align:left;max-width:690px}
+.hero-surface--premium .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(197,245,243,.16);color:#c9fffb;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.hero-title{margin:0;max-width:none;font-weight:950;color:#f8fdff;font-size:clamp(2.65rem,6.6vw,5.65rem);letter-spacing:-.06em;line-height:.96;text-wrap:balance}
+.hero-title span{display:block;color:#62e8dd;text-shadow:0 10px 36px rgba(42,214,199,.14)}
+.hero-surface--premium .hero-lead{font-size:clamp(1.08rem,1.95vw,1.34rem);max-width:650px;margin:22px 0 0;line-height:1.65;color:#eef7fa;font-weight:500}
+.hero-surface--premium .hero-audience{max-width:650px;margin:12px 0 0;font-size:clamp(.93rem,1.2vw,1rem);line-height:1.65;color:#b9d3de}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin-top:28px}
+.hero-app-cta,.hero-secondary-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 21px;min-height:52px;border-radius:14px;font-weight:850;font-size:.96rem;text-decoration:none;line-height:1.3;box-sizing:border-box;transition:transform .15s ease, background .15s ease, border-color .15s ease}
+.hero-app-cta{background:linear-gradient(135deg,#5ef0e2,#2fcfc4);color:#08343a;box-shadow:0 16px 32px rgba(7,16,26,.22)}.hero-app-cta:hover{transform:translateY(-1px);background:linear-gradient(135deg,#7bf6ea,#44ddd3)}
+.hero-secondary-cta{border:1px solid rgba(192,241,239,.34);color:#eefcfd;background:rgba(255,255,255,.07)}.hero-secondary-cta:hover{transform:translateY(-1px);border-color:rgba(192,241,239,.55);background:rgba(255,255,255,.11)}
+.hero-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0 0;max-width:760px}.hero-facts span{display:flex;flex-direction:column;gap:5px;border:1px solid rgba(152,232,227,.18);background:rgba(255,255,255,.07);backdrop-filter:blur(4px);border-radius:16px;padding:14px 15px;color:#dceef3;font-size:.86rem;line-height:1.35;box-shadow:0 10px 26px rgba(4,16,29,.12)}.hero-facts strong{color:#70f2e7;font-size:1rem}
+.hero-visual{position:relative;z-index:2}
+.hero-image-card{position:relative;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.04));box-shadow:0 24px 58px rgba(5,18,33,.26)}
+.hero-image-card img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover}
+.floating-card{position:absolute;z-index:3;max-width:min(250px,70%);background:rgba(255,255,255,.94);border:1px solid rgba(11,31,51,.08);box-shadow:0 18px 34px rgba(7,23,40,.14);border-radius:18px;padding:14px 15px;color:#173246}
+.floating-card--top{top:18px;left:18px}
+.floating-card--bottom{right:18px;bottom:18px}
+.floating-label{display:block;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:#0b8d88;font-weight:850;margin-bottom:7px}
+.floating-card strong{display:block;font-size:.98rem;line-height:1.35;color:#0b1f33}
+.floating-card ul{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:7px}
+.floating-card li{position:relative;padding-left:16px;font-size:.83rem;line-height:1.35;color:#4b6270}
+.floating-card li::before{content:'•';position:absolute;left:0;color:#0b8d88;font-weight:900}
+@media(max-width:1080px){.hero-surface.hero-surface--premium{grid-template-columns:1fr;gap:26px}.hero-surface--premium .hero-copy{max-width:none}.hero-visual{max-width:780px}.hero-facts{max-width:none}}
+@media(max-width:900px){.nav-links{display:none}.hero-title{font-size:clamp(2.45rem,9.2vw,4.8rem)}.hero-facts{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.hero{padding:24px 0 16px}.hero-surface.hero-surface--premium{padding:24px 18px;border-radius:24px}.hero-title{font-size:clamp(2.2rem,10.6vw,3.7rem);line-height:1.02}.hero-surface--premium .hero-lead{font-size:1.05rem}.hero-actions{flex-direction:column;align-items:stretch}.hero-app-cta,.hero-secondary-cta{width:100%;white-space:normal;text-align:center;font-size:.91rem;padding:13px 14px}.hero-facts{grid-template-columns:1fr;gap:9px}.floating-card{position:static;max-width:none;margin:12px}.hero-image-card{padding-bottom:8px}.header-cta{font-size:.75rem;padding:10px 12px;white-space:nowrap;min-width:0}.nav{gap:8px}.brand{font-size:1rem}.brand-icon{width:32px;height:32px}}
 @media(max-width:380px){.header-cta{font-size:0;width:44px;height:40px;padding:0}.header-cta::after{content:'Get app ↗';font-size:.78rem}.brand{font-size:.94rem}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SalaryNspect", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://apps.apple.com/us/app/salarynspect/id6804337327", "offers": {"@type": "Offer", "price": "39.99", "priceCurrency": "USD"}, "description": "iPhone app to track production and commission pay, review expected and reported compensation, and compare offers."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SalaryNspect", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://apps.apple.com/us/app/salarynspect/id6804337327", "offers": {"@type": "Offer", "price": "39.99", "priceCurrency": "USD"}, "description": "iPhone app to check expected against reported production and commission earnings, organize pay records, and review potential discrepancies."}</script>
 <meta name="apple-itunes-app" content="app-id=6804337327">
+<style>
+/* v8.5 financial protection conversion update */
+.protection-section{padding:46px 0 30px}.protection-header{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:20px}.protection-header .section-heading{margin:0}.protection-kicker{font-size:.75rem;letter-spacing:.14em;color:#078d88;font-weight:850;margin-bottom:12px}.protection-link{color:#087e80;font-weight:850;text-decoration:none;display:inline-block;padding:10px 0}.protection-link:hover{text-decoration:underline}.protection-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}.protection-example{background:linear-gradient(148deg,#0a2239,#0d3c52);border-radius:24px;color:#fff;padding:clamp(22px,3vw,35px);box-shadow:0 18px 38px rgba(8,28,44,.12)}.example-topline{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.7rem;font-weight:850;letter-spacing:.08em;color:#a7cbd7;margin-bottom:18px}.demo-label{background:#1b5261;border-radius:999px;padding:4px 10px;color:#e0fffa;letter-spacing:0}.pay-number{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid rgba(255,255,255,.14);padding:19px 0;align-items:center}.pay-number span{color:#c6dce5;font-size:.9rem}.pay-number strong{font-size:clamp(1.2rem,2.6vw,1.8rem);white-space:nowrap}.pay-difference{display:flex;gap:15px;align-items:center;justify-content:space-between;padding:25px 0 12px}.pay-difference div span{display:block;color:#bfe4e3;font-size:.83rem}.pay-difference strong{display:block;color:#6affee;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.2}.review-pill{border:1px solid #75d5cf;border-radius:999px;padding:8px 10px;color:#9cffef;font-size:.76rem;white-space:nowrap}.example-explainer{font-size:.82rem;color:#b8d1db;line-height:1.7;margin:16px 0 0}.protection-copy{background:#fff;border:1px solid #dce9ec;border-radius:24px;padding:clamp(22px,3vw,35px)}.protection-copy h3{color:#0b1f33;font-size:clamp(1.35rem,2.5vw,1.85rem);line-height:1.18;margin:0 0 22px}.benefit{display:flex;gap:13px;margin:17px 0}.benefit-icon{display:grid;place-items:center;flex:0 0 28px;height:28px;border-radius:50%;color:#006c65;background:#d3f5ef;font-weight:900}.benefit strong{color:#0b1f33}.benefit p{margin:3px 0 0;font-size:.88rem;line-height:1.55;color:#536777}.protection-cta{margin-top:18px;display:inline-flex;background:#0d384f;color:#fff;text-decoration:none;border-radius:12px;padding:15px 20px;font-weight:850;max-width:100%;box-sizing:border-box}.protection-fineprint{font-size:.76rem;color:#647785;margin:10px 0 0}.report-section{margin:22px auto 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;background:#ecf7f8;border:1px solid #d0e5e8;border-radius:25px;padding:clamp(25px,4vw,45px)}.report-copy h2{font-size:clamp(1.8rem,3.5vw,2.6rem);line-height:1.12;letter-spacing:-.04em;color:#0b1f33;margin:0 0 16px}.report-copy p{color:#536777;line-height:1.65;max-width:550px}.report-preview{background:#fff;border:1px solid #dce9ec;padding:25px;border-radius:14px;box-shadow:0 15px 35px rgba(5,34,52,.08);transform:rotate(1deg)}.report-preview-header{display:flex;justify-content:space-between;gap:8px;color:#098b85;font-weight:850;font-size:.8rem}.report-preview-header span:last-child{font-size:.64rem;color:#80919c}.report-preview h3{font-size:1.4rem;color:#0a233a;margin:24px 0 5px}.report-sub{font-size:.76rem;color:#7c8e97}.report-rule{height:3px;background:linear-gradient(90deg,#0a3145,#13baa9);margin:20px 0}.report-line{display:flex;gap:10px;justify-content:space-between;padding:13px 0;border-bottom:1px solid #e5eff0;color:#536777;font-size:.86rem}.report-line strong{color:#163448}.report-accent{color:#086d69}.report-accent strong{color:#087c75}.report-note{background:#eef6f6;border-radius:8px;padding:12px;margin-top:18px;font-size:.78rem;line-height:1.55;color:#4b6270}.final-conversion{background:linear-gradient(115deg,#0b1f33,#0d5260);border-radius:22px;margin:22px auto 60px;padding:32px;display:flex;justify-content:space-between;gap:20px;align-items:center}.final-conversion h2{color:#fff;font-size:clamp(1.35rem,3vw,2rem);margin:0 0 10px}.final-conversion p{color:#c7e1e7;line-height:1.55;margin:0;max-width:660px}.final-conversion a{flex-shrink:0;border-radius:12px;background:#56e4d5;color:#07383c;padding:15px 20px;text-decoration:none;font-weight:850;text-align:center}
+@media(max-width:800px){.protection-grid,.report-section{grid-template-columns:1fr}.report-preview{transform:none}.final-conversion{flex-direction:column;align-items:stretch}}
+@media(max-width:520px){.protection-section{padding-top:22px}.protection-example,.protection-copy{border-radius:18px}.pay-number{align-items:flex-start;flex-direction:column;gap:5px}.report-section{padding:20px;border-radius:19px}.report-preview{padding:18px}.final-conversion{padding:24px 20px}.protection-cta,.final-conversion a{width:100%;justify-content:center;text-align:center}.hero-title{font-size:clamp(2.25rem,9.5vw,3.65rem)}}
+</style>
+<style>
+/* v8.8: cohesive SalaryNspect design system */
+:root{--sn-deep:#071728;--sn-navy:#0b1f33;--sn-teal:#2ecdc4;--sn-teal-light:#6af2e6;--sn-border:#dce8ee;--sn-ease:cubic-bezier(.2,.7,.2,1)}
+body{background:linear-gradient(180deg,#f6fafc 0%,#ffffff 32%,#f1f7fa 100%)}
+header{box-shadow:0 10px 26px rgba(4,14,28,.16)}
+.header-cta,.hero-app-cta,.protection-cta,.cta-panel a,.final-conversion a,.post-calc-upsell a,.mobile-action{border-radius:13px!important;background:linear-gradient(120deg,#60eee1,#25c8be)!important;color:#062f36!important;border:1px solid rgba(14,131,129,.12);box-shadow:0 10px 24px rgba(10,126,123,.19);font-weight:850;transition:transform .18s var(--sn-ease), box-shadow .18s var(--sn-ease),filter .18s var(--sn-ease)}
+.header-cta:hover,.hero-app-cta:hover,.protection-cta:hover,.cta-panel a:hover,.final-conversion a:hover,.post-calc-upsell a:hover,.mobile-action:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 15px 30px rgba(10,126,123,.23)}
+.hero-secondary-cta{border-radius:13px!important}
+.hero-secondary-cta:hover{transform:translateY(-2px)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #50dacf;outline-offset:3px}
+.section-heading h2,.showcase>h2,.extension>h2,.report-copy h2,.protection-copy h3{letter-spacing:-.045em;text-wrap:balance}
+.section-heading h2,.showcase>h2,.extension>h2{font-size:clamp(2rem,3.55vw,2.85rem);line-height:1.1}
+.section-heading h2::after,.showcase>h2::after,.extension>h2::after{content:'';display:block;width:53px;height:4px;margin-top:16px;border-radius:99px;background:linear-gradient(90deg,#0f9e9a,#66e5d7)}
+.showcase>h2::after{margin-left:auto;margin-right:auto}
+.section-heading p,.showcase .intro,.extension .intro{font-size:1.03rem;line-height:1.7}
+.protection-kicker{display:inline-block;letter-spacing:.15em;color:#087a78}
+.resource-card,.career-grid a,.showcase-more article,.shot{transition:transform .18s var(--sn-ease),box-shadow .18s var(--sn-ease),border-color .18s var(--sn-ease);border-color:var(--sn-border)}
+.resource-card:hover,.career-grid a:hover,.showcase-more article:hover,.shot:hover{transform:translateY(-3px);border-color:#8bdad4;box-shadow:0 22px 38px rgba(10,36,50,.10)}
+.showcase{background:linear-gradient(150deg,#f0f8fa,#eaf4f8);border:1px solid #e0ebef;box-shadow:0 20px 60px rgba(10,43,62,.05)}
+.cta-panel,.final-conversion{background:radial-gradient(circle at 90% 10%,rgba(81,224,212,.15),transparent 40%),linear-gradient(125deg,#081a2c,#0b344a 85%);box-shadow:0 18px 38px rgba(7,23,40,.13);border:1px solid rgba(122,233,224,.16)}
+.final-conversion h2,.cta-panel h2{letter-spacing:-.04em}
+footer{padding:50px 0 30px;background:radial-gradient(circle at 82% 10%,rgba(25,184,178,.10),transparent 36%),linear-gradient(180deg,#0b2136,#071524 100%);box-shadow:none}
+footer::before{height:2px;background:linear-gradient(90deg,transparent,#52e5da 32%,#6fffee 50%,#52e5da 68%,transparent)}
+.footer-grid{align-items:start;gap:26px}
+.footer-identity{max-width:410px}
+.footer-lockup{display:inline-flex;align-items:center;gap:13px;text-decoration:none!important;font-size:1.45rem;font-weight:900;letter-spacing:-.04em}
+.footer-lockup img{border-radius:13px;box-shadow:0 12px 30px rgba(0,0,0,.19);flex-shrink:0}
+.footer-identity p{color:#e1eff2;font-size:1.02rem;font-weight:700;margin:17px 0 5px}
+.footer-value{color:#a9c8d2;font-size:.9rem;line-height:1.5}
+.footer-links{max-width:360px;justify-content:flex-end;gap:13px 22px;padding-top:13px}
+.footer-links a,.footer-legal a{color:#cfe8ed!important;text-decoration:none;font-size:.91rem;transition:color .15s ease}
+.footer-links a:hover,.footer-legal a:hover{color:#72f5e9!important;text-decoration:underline}
+.site-footer-extra{display:block;margin-top:34px}
+.footer-rule{height:1px;background:rgba(196,239,237,.17);margin-bottom:20px}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#9ebdc7;font-size:.8rem}
+.footer-legal{display:flex;gap:14px 22px;flex-wrap:wrap}
+@media(max-width:700px){.footer-grid,.footer-bottom{flex-direction:column;align-items:flex-start}.footer-links{justify-content:flex-start;padding-top:8px}.site-footer-extra{margin-top:28px}.section-heading h2,.showcase>h2,.extension>h2{font-size:clamp(1.8rem,7vw,2.4rem)}}
+@media(prefers-reduced-motion:reduce){.header-cta,.hero-app-cta,.protection-cta,.cta-panel a,.final-conversion a,.resource-card,.career-grid a,.showcase-more article,.shot{transition:none}}
+</style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/"><span class="mark">SN</span><span>Salary<span class="accent">Nspect</span></span></a>
+    <a class="brand" href="/"><img class="brand-icon" src="assets/salarynspect-app-icon.png" alt="SalaryNspect logo"><span class="brand-wordmark"><span class="brand-salary">Salary</span><span class="brand-nspect">Nspect</span></span></a>
     <div class="nav-right">
-      <nav class="nav-links" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="#see-the-app">Features</a><a href="#pay-estimator">Pay Estimator</a><a href="#other-careers">Careers</a><a href="support.html">Support</a></nav>
+      <nav class="nav-links" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="#see-the-app">Features</a><a href="#pay-protection">Why check?</a><a href="#pay-estimator">Pay Estimator</a><a href="#other-careers">Careers</a><a href="support.html">Support</a></nav>
       <a class="header-cta" href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
     </div>
   </div>
@@ -184,19 +241,36 @@ footer{border-top:1px solid rgba(111,255,238,.18);padding:32px 0 40px;color:rgba
 <main>
 <section class="hero">
   <div class="wrap">
-    <div class="hero-surface hero-surface--editorial">
+    <div class="hero-surface hero-surface--premium">
       <div class="hero-copy">
-        <div class="eyebrow">SALARYNSPECT · PAY CLARITY</div>
-        <h1 class="hero-title">KNOW WHAT YOU<br>SHOULD EARN</h1>
-        <p class="hero-lead">Understand your compensation. Verify expected pay against reported earnings. Make informed decisions about your next offer.</p>
-        <p class="hero-audience">For veterinarians, dentists, optometrists, service advisors, and other production- or commission-based professionals.</p>
-        <div class="hero-actions"><a class="hero-app-cta" href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">Get SalaryNspect on the App Store <span aria-hidden="true">↗</span></a><a class="hero-secondary-cta" href="#pay-estimator">Try the free estimator ↓</a></div>
-        <div class="hero-facts"><span><strong>3 free comparisons</strong> to get started</span><span><strong>$39.99</strong> lifetime Pro</span><span><strong>No subscription</strong> or account</span></div>
+        <div class="eyebrow">SalaryNspect · financial protection</div>
+        <h1 class="hero-title">Protect the income<span>you already earned.</span></h1>
+        <p class="hero-lead">SalaryNspect helps production- and commission-based professionals compare expected earnings with reported pay, stay organized, and recognize differences worth reviewing.</p>
+        <p class="hero-audience">Use the free estimator to understand the numbers, then use the iPhone app to track pay periods, review results, and export a professional report when you need it.</p>
+        <div class="hero-actions"><a class="hero-app-cta" href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">Try 3 pay comparisons free <span aria-hidden="true">↗</span></a><a class="hero-secondary-cta" href="#pay-estimator">Use the free pay estimator ↓</a></div>
+        <div class="hero-facts"><span><strong>Check your pay</strong> Compare expected earnings with reported pay.</span><span><strong>Save time</strong> Keep pay periods and calculations organized.</span><span><strong>Look prepared</strong> Export a professional PDF report.</span></div>
       </div>
-      <div class="hero-wide-art"><img src="assets/product-header.webp" width="1600" height="685" alt="SalaryNspect branded visual identity" fetchpriority="high"></div>
+      <div class="hero-visual" aria-hidden="false">
+        <div class="hero-image-card">
+          <img src="assets/hero-modern.webp" width="1672" height="941" alt="Professionals reviewing compensation data on a laptop and phone" fetchpriority="high">
+          <div class="floating-card floating-card--top"><span class="floating-label">Why it helps</span><strong>Turn complicated compensation into a clearer review process.</strong></div>
+          <div class="floating-card floating-card--bottom"><span class="floating-label">Simple workflow</span><ul><li>Estimate what you expected to earn</li><li>Compare it with your reported pay</li><li>Save the results in a clear report</li></ul></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<section class="wrap protection-section" id="pay-protection" aria-labelledby="protection-title">
+ <div class="protection-header"><div class="section-heading"><div class="protection-kicker">YOUR PAY DESERVES A SECOND LOOK</div><h2 id="protection-title">Could a small pay discrepancy go unnoticed?</h2><p>Even a modest difference can matter when it repeats. Reviewing your compensation helps you ask better questions—whether the numbers match or need a closer look.</p></div><a class="protection-link" href="#pay-estimator">Start with the free estimator ↗</a></div>
+ <div class="protection-grid">
+  <div class="protection-example"><div class="example-topline"><span>ILLUSTRATIVE PAY-PERIOD EXAMPLE</span><span class="demo-label">Sample numbers</span></div>
+   <div class="pay-number"><span>Expected gross earnings</span><strong>$6,250.00</strong></div><div class="pay-number"><span>Reported gross earnings</span><strong>$6,175.00</strong></div><div class="pay-difference"><div><span>Difference to review</span><strong>$75.00</strong></div><span class="review-pill">Worth checking</span></div>
+   <p class="example-explainer">A $75 difference is not proof of an error—it could reflect a contract rule, adjustment, or missing information. The first step is recognizing that the figures don't match.</p>
+  </div>
+  <div class="protection-copy"><h3>Financial protection begins with knowing your numbers.</h3><div class="benefit"><span class="benefit-icon" aria-hidden="true">✓</span><div><strong>Spot discrepancies</strong><p>Compare expected earnings with what your pay statement reports.</p></div></div><div class="benefit"><span class="benefit-icon" aria-hidden="true">✓</span><div><strong>Spend less time rechecking</strong><p>Keep your pay information organized instead of starting from scratch each period.</p></div></div><div class="benefit"><span class="benefit-icon" aria-hidden="true">✓</span><div><strong>Bring clarity to conversations</strong><p>Use a detailed PDF report to discuss figures professionally and confidently.</p></div></div><a class="protection-cta" href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">Check your pay — 3 comparisons free ↗</a><p class="protection-fineprint">No subscription. Lifetime Pro unlock: $39.99. Individual results depend on your contract and entries.</p></div>
+ </div>
+</section>
+<section class="wrap report-section" id="sample-report" aria-labelledby="report-title"><div class="report-copy"><div class="protection-kicker">CONFIDENCE, NOT CONFRONTATION</div><h2 id="report-title">Show up prepared when it's time to talk pay.</h2><p>Instead of wondering whether something looks off, keep a clear comparison of the numbers and a record of the pay periods you've reviewed.</p><p>SalaryNspect's detailed PDF export helps you organize findings for a discussion with payroll, a manager, or an advisor.</p><a class="protection-link" href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">See what SalaryNspect can do ↗</a></div><div class="report-preview" aria-label="Illustrative compensation review report preview"><div class="report-preview-header"><span>SalaryNspect</span><span>SAMPLE REPORT LAYOUT</span></div><h3>Compensation Review</h3><p class="report-sub">Illustrative only · Not an actual exported report</p><div class="report-rule"></div><div class="report-line"><span>Expected gross</span><strong>$6,250.00</strong></div><div class="report-line"><span>Reported gross</span><strong>$6,175.00</strong></div><div class="report-line report-accent"><span>Difference to review</span><strong>$75.00</strong></div><div class="report-note">Next step: Review contract terms and pay statement details before concluding there is an error.</div></div></section>
 <section class="wrap" id="pay-estimator"><div class="section-heading" style="margin:25px 0 10px"><h2>Free production pay calculator</h2><p>Estimate production-based pay from your guarantee, eligible production, and compensation rate. For contract-specific rules, read our <a href="negative-accrual.html">negative accrual explanation</a> or <a href="https://www.salarynspect.com/prosal-guide.html">veterinary ProSal guide</a>. Results are estimates, not payroll determinations.</p></div></section>
 <section class="wrap calculator-shell" aria-label="Production pay estimator">
       <div class="card input-card">
@@ -337,19 +411,21 @@ footer{border-top:1px solid rgba(111,255,238,.18);padding:32px 0 40px;color:rgba
     </div>
   </div>
 </section>
+<section class="wrap final-conversion" aria-labelledby="conversion-title"><div><h2 id="conversion-title">You work hard for your pay. Know the numbers behind it.</h2><p>Start with three free comparisons. If SalaryNspect fits your workflow, unlock continued use for $39.99 once—no recurring subscription.</p></div><a href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">Try SalaryNspect free ↗</a></section>
+
 </main>
 
 
 <footer>
   <div class="wrap footer-grid">
-    <div><strong>SalaryNspect</strong> • Compensation &amp; Pay Tracker</div>
+    <div class="footer-identity"><a class="footer-lockup" href="/" aria-label="SalaryNspect homepage"><img src="assets/salarynspect-app-icon.png" width="52" height="52" alt=""><span class="brand-wordmark"><span class="brand-salary">Salary</span><span class="brand-nspect">Nspect</span></span></a><p>Know your numbers. Protect what you earn.</p><span class="footer-value">Pay clarity for production and commission professionals.</span></div>
     <div class="footer-links">
       <a href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">App Store</a>
       <a href="/">Home</a>
       <a href="https://www.salarynspect.com/prosal-guide.html">Veterinary ProSal</a>
     </div>
   </div>
-<div class="wrap site-footer-extra"><a href="privacy.html">Privacy</a><a href="about.html">About</a><a href="support.html">Support</a><a href="mailto:aodigital.lab@gmail.com">Contact</a></div></footer>
+<div class="wrap site-footer-extra"><div class="footer-rule"></div><div class="footer-bottom"><span>© SalaryNspect · Independent compensation tools</span><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="about.html">About</a><a href="support.html">Support</a><a href="mailto:aodigital.lab@gmail.com">Contact</a></div></div></div></footer>
 
 <script>
     // IMPORTANT:
