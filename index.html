@@ -163,18 +163,11 @@ footer{border-top:1px solid rgba(111,255,238,.18);padding:32px 0 40px;color:rgba
 .hero-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0 0;max-width:760px}.hero-facts span{display:flex;flex-direction:column;gap:5px;border:1px solid rgba(152,232,227,.18);background:rgba(255,255,255,.07);backdrop-filter:blur(4px);border-radius:16px;padding:14px 15px;color:#dceef3;font-size:.86rem;line-height:1.35;box-shadow:0 10px 26px rgba(4,16,29,.12)}.hero-facts strong{color:#70f2e7;font-size:1rem}
 .hero-visual{position:relative;z-index:2}
 .hero-image-card{position:relative;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.04));box-shadow:0 24px 58px rgba(5,18,33,.26)}
-.hero-image-card img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover}
-.floating-card{position:absolute;z-index:3;max-width:min(250px,70%);background:rgba(255,255,255,.94);border:1px solid rgba(11,31,51,.08);box-shadow:0 18px 34px rgba(7,23,40,.14);border-radius:18px;padding:14px 15px;color:#173246}
-.floating-card--top{top:18px;left:18px}
-.floating-card--bottom{right:18px;bottom:18px}
-.floating-label{display:block;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:#0b8d88;font-weight:850;margin-bottom:7px}
-.floating-card strong{display:block;font-size:.98rem;line-height:1.35;color:#0b1f33}
-.floating-card ul{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:7px}
-.floating-card li{position:relative;padding-left:16px;font-size:.83rem;line-height:1.35;color:#4b6270}
-.floating-card li::before{content:'•';position:absolute;left:0;color:#0b8d88;font-weight:900}
+.hero-image-card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center}
+
 @media(max-width:1080px){.hero-surface.hero-surface--premium{grid-template-columns:1fr;gap:26px}.hero-surface--premium .hero-copy{max-width:none}.hero-visual{max-width:780px}.hero-facts{max-width:none}}
 @media(max-width:900px){.nav-links{display:none}.hero-title{font-size:clamp(2.45rem,9.2vw,4.8rem)}.hero-facts{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.hero{padding:24px 0 16px}.hero-surface.hero-surface--premium{padding:24px 18px;border-radius:24px}.hero-title{font-size:clamp(2.2rem,10.6vw,3.7rem);line-height:1.02}.hero-surface--premium .hero-lead{font-size:1.05rem}.hero-actions{flex-direction:column;align-items:stretch}.hero-app-cta,.hero-secondary-cta{width:100%;white-space:normal;text-align:center;font-size:.91rem;padding:13px 14px}.hero-facts{grid-template-columns:1fr;gap:9px}.floating-card{position:static;max-width:none;margin:12px}.hero-image-card{padding-bottom:8px}.header-cta{font-size:.75rem;padding:10px 12px;white-space:nowrap;min-width:0}.nav{gap:8px}.brand{font-size:1rem}.brand-icon{width:32px;height:32px}}
+@media(max-width:560px){.hero{padding:24px 0 16px}.hero-surface.hero-surface--premium{padding:24px 18px;border-radius:24px}.hero-title{font-size:clamp(2.2rem,10.6vw,3.7rem);line-height:1.02}.hero-surface--premium .hero-lead{font-size:1.05rem}.hero-actions{flex-direction:column;align-items:stretch}.hero-app-cta,.hero-secondary-cta{width:100%;white-space:normal;text-align:center;font-size:.91rem;padding:13px 14px}.hero-facts{grid-template-columns:1fr;gap:9px}.header-cta{font-size:.75rem;padding:10px 12px;white-space:nowrap;min-width:0}.nav{gap:8px}.brand{font-size:1rem}.brand-icon{width:32px;height:32px}}
 @media(max-width:380px){.header-cta{font-size:0;width:44px;height:40px;padding:0}.header-cta::after{content:'Get app ↗';font-size:.78rem}.brand{font-size:.94rem}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SalaryNspect", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://apps.apple.com/us/app/salarynspect/id6804337327", "offers": {"@type": "Offer", "price": "39.99", "priceCurrency": "USD"}, "description": "iPhone app to check expected against reported production and commission earnings, organize pay records, and review potential discrepancies."}</script>
@@ -258,11 +251,9 @@ header .brand-salary{color:#fff!important}header .brand-nspect{color:#31cfc6!imp
         <div class="hero-actions"><a class="hero-app-cta" href="https://apps.apple.com/us/app/salarynspect/id6804337327?ppid=01a1049a-da74-4cf5-8b1e-59e2d75da25f" target="_blank" rel="noopener noreferrer">Try 3 pay comparisons free <span aria-hidden="true">↗</span></a><a class="hero-secondary-cta" href="#pay-estimator">Use the free pay estimator ↓</a></div>
         <div class="hero-facts"><span><strong>Check your pay</strong> Compare expected earnings with reported pay.</span><span><strong>Save time</strong> Keep pay periods and calculations organized.</span><span><strong>Look prepared</strong> Export a professional PDF report.</span></div>
       </div>
-      <div class="hero-visual" aria-hidden="false">
+      <div class="hero-visual" >
         <div class="hero-image-card">
           <img src="assets/hero-modern.webp" width="1672" height="941" alt="Professionals reviewing compensation data on a laptop and phone" fetchpriority="high">
-          <div class="floating-card floating-card--top"><span class="floating-label">Why it helps</span><strong>Turn complicated compensation into a clearer review process.</strong></div>
-          <div class="floating-card floating-card--bottom"><span class="floating-label">Simple workflow</span><ul><li>Estimate what you expected to earn</li><li>Compare it with your reported pay</li><li>Save the results in a clear report</li></ul></div>
         </div>
       </div>
     </div>
